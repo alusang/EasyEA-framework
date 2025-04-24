@@ -58,7 +58,7 @@ def evaluate_predictions(sim_matrix, left_keys, right_keys, ground_truth, k_valu
         left_keys[i]: sorted(
             [(right_keys[j], sim_matrix[i, j]) for j in range(len(right_keys))],
             key=lambda x: x[1], reverse=True
-        )[:10]
+        )
         for i in range(len(left_keys))
     }
 
@@ -84,17 +84,22 @@ def evaluate_predictions(sim_matrix, left_keys, right_keys, ground_truth, k_valu
             for k in k_values:
                 if rank <= k:
                     hits[k] += 1
+        else:
+            reciprocal_ranks.append(0.0)
+            incorrect_hits1_candidates[left_id] = preds[:10]
 
-        if rank != 1:
-            incorrect_hits1_candidates[left_id] = preds
-
-    mrr = sum(reciprocal_ranks) / len(reciprocal_ranks) if reciprocal_ranks else 0.0
+    mrr = sum(reciprocal_ranks) / total_predictions if total_predictions > 0 else 0.0
     hits_results = {f'Hits@{k}': hits[k] / total_predictions for k in k_values}
 
-    return {'MRR': mrr, **hits_results, 'candidates': candidates,
-            'correct_predictions_at_1': correct_predictions_at_1,
-            'total_predictions': total_predictions,
-            'incorrect_hits1_candidates': incorrect_hits1_candidates}
+    return {
+        'MRR': mrr,
+        **hits_results,
+        'candidates': {k: v[:10] for k, v in candidates.items()},
+        'correct_predictions_at_1': correct_predictions_at_1,
+        'total_predictions': total_predictions,
+        'incorrect_hits1_candidates': incorrect_hits1_candidates
+    }
+
 
 def load_alignments_from_txt(file_path):
     with open(file_path, 'r') as f:
