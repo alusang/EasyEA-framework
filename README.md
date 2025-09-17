@@ -46,7 +46,7 @@ If you find this code to be useful for your research, please consider citing.
     title = "{E}asy{EA}: Large Language Model is All You Need in Entity Alignment Between Knowledge Graphs",
     author = "Cheng, Jingwei and Lu, Chenglong and Yang, Linyan and Chen, Guoqing and Zhang, Fu",
     booktitle = "Findings of the Association for Computational Linguistics: ACL 2025",
-    month = Jul,
+    month = jul,
     year = "2025",
     url = "https://aclanthology.org/2025.findings-acl.1080/",
     doi = "10.18653/v1/2025.findings-acl.1080",
