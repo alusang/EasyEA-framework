@@ -50,6 +50,6 @@ If you find this code to be useful for your research, please consider citing.
     year = "2025",
     url = "https://aclanthology.org/2025.findings-acl.1080/",
     doi = "10.18653/v1/2025.findings-acl.1080",
-    pages = "20981--20995",
+    pages = "20981--20995"
 }
 ```
