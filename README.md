@@ -42,11 +42,25 @@ All datasets come from commonly used entity alignment datasets. Below are the so
 If you find this code to be useful for your research, please consider citing.
 
 ```
-@inproceedings{cheng2025easyea,
-  title={EasyEA: Large Language Model is All You Need in Entity Alignment Between Knowledge Graphs},
-  author={Cheng, Jingwei and Lu, Chenglong and Yang, Linyan and Chen, Guoqing and Zhang, Fu},
-  booktitle={Findings of the Association for Computational Linguistics: ACL 2025},
-  pages={20981--20995},
-  year={2025}
+@inproceedings{cheng-etal-2025-easyea,
+    title = "{E}asy{EA}: Large Language Model is All You Need in Entity Alignment Between Knowledge Graphs",
+    author = "Cheng, Jingwei  and
+      Lu, Chenglong  and
+      Yang, Linyan  and
+      Chen, Guoqing  and
+      Zhang, Fu",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2025",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-acl.1080/",
+    doi = "10.18653/v1/2025.findings-acl.1080",
+    pages = "20981--20995",
+    ISBN = "979-8-89176-256-5",
 }
 ```
