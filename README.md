@@ -24,3 +24,17 @@ All datasets come from commonly used entity alignment datasets. Below are the so
 ## Embedding Code
 
 **Embedding.py** is based on [LLM2Vec](https://github.com/McGill-NLP/llm2vec), which provides integrated query and embedding code. The execution speed is much faster than the method of first processing with GPT.
+
+# Citation
+
+If you find this code to be useful for your research, please consider citing.
+
+```
+@inproceedings{cheng2025easyea,
+  title={EasyEA: Large Language Model is All You Need in Entity Alignment Between Knowledge Graphs},
+  author={Cheng, Jingwei and Lu, Chenglong and Yang, Linyan and Chen, Guoqing and Zhang, Fu},
+  booktitle={Findings of the Association for Computational Linguistics: ACL 2025},
+  pages={20981--20995},
+  year={2025}
+}
+```
