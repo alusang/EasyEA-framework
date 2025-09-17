@@ -2,9 +2,12 @@
 
 This work has been accepted and published:
 
-**EasyEA: Large Language Model is All You Need in Entity Alignment Between Knowledge Graphs**  
+### EasyEA: Large Language Model is All You Need in Entity Alignment Between Knowledge Graphs
+
 Jingwei Cheng, Chenglong Lu, Linyan Yang, Guoqing Chen, and Fu Zhang.  
+
 *Findings of the Association for Computational Linguistics: ACL 2025*, pages 20981–20995, Vienna, Austria, July 2025.  
+
 [PDF](https://aclanthology.org/2025.findings-acl.1080/) | [DOI](https://doi.org/10.18653/v1/2025.findings-acl.1080)  
 
 # EasyEA Code Description
